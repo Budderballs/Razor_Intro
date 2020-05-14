@@ -1,0 +1,23 @@
+﻿@page
+@model Razor.TempModel
+@{
+}
+<div class="text-center">
+    <h1 class="display-4">WELCOME TO EASY CONVERT</h1>
+
+
+
+
+    <form method="post">
+        <select name="ForCorCorF" required>
+            <option value="">Select a Conversion Type</option>
+            <option value="1">Farenheit to Celcius</option>
+            <option value="2">Celcius to Farenheit</option>
+        </select>
+        <div>
+            Enter temperature <input type="number" style="width:90px" name="temp" required />
+            <input type="submit" />
+        </div>
+        <h2>CONVERTED TEMPERATURE = @Model.convertedTemp</h2>
+    </form>
+</div>

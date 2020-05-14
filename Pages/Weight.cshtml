@@ -1,0 +1,27 @@
+﻿@page
+@model Razor.WeightModel
+@{
+}
+
+    <div class="text-center">
+        <h1 class="display-4">WELCOME TO EASY CONVERT</h1>
+
+
+
+        <form method="post">
+            <select name="weightType" required>
+                <option value="">Select a Conversion Type</option>
+                <option value="1">Pounds to Ounces</option>
+                <option value="2">Ounces to Pounds</option>
+                <option value="3">Grams to Pounds</option>
+                <option value="4">Milligrams to Pounds</option>
+            </select>
+            <div>
+                Enter temperature <input type="number" style="width:90px" name="weight" required />
+                <input type="submit" />
+            </div>
+            <h2>CONVERTED WEIGHT = @Model.convertedWeight</h2>
+
+
+        </form>
+    </div>
